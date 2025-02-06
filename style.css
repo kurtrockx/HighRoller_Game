@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: rgb(50, 50, 50);
+}
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: clamp(300px, 50%, 1800px);
+  margin: auto;
+}
+.container {
+  overflow: hidden;
+  width: 100%;
+  background-color: #a6d8fd;
+  color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  max-width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+  opacity: 85%;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  display: block;
+  padding: 10px 20px;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.btn:active {
+  transform: translate(-50%, 5px);
+}
+.hidden {
+  display: none;
+}
+#winner {
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+.nGame {
+  top: 5%;
+}
+.dice {
+  position: absolute;
+  z-index: 1000;
+  top: 30%;
+  width: 10%;
+  text-align: center;
+}
+.dice img {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.rollDice {
+  top: 64%;
+}
+.hold {
+  top: 74%;
+}
+
+.player {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.activePlayer {
+  background-color: #ffffff59;
+}
+.playerWin {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tScore {
+  width: 300px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.ttScore {
+  margin-top: 20px;
+  font-size: 5rem;
+  color: #0047ab;
+}
+
+.cScore {
+  background-color: #0047ab;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  font-size: 1rem;
+}
+.ccScore {
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
